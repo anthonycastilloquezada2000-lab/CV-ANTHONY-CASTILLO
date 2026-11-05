@@ -1,0 +1,178 @@
+Bro pero no cambio
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e8eceb;
+    padding: 40px 20px;
+    color: #252b29;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.cv {
+    max-width: 950px;
+    margin: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== COLUMNA IZQUIERDA ===== */
+
+.izquierda {
+    width: 34%;
+    background-color: #202a27;
+    color: #ffffff;
+    padding: 35px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOTOGRAFÍA */
+
+.foto {
+    width: 145px;
+    height: 145px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 3px solid #36c99a;
+    margin-bottom: 22px;
+}
+
+/* TÍTULOS LATERALES */
+
+.izquierda h2 {
+    width: 100%;
+    color: #36c99a;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #52615b;
+}
+
+/* INFORMACIÓN LATERAL */
+
+.izquierda p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #e0e7e3;
+}
+
+/* ===== COLUMNA DERECHA ===== */
+
+.derecha {
+    width: 66%;
+    padding: 45px 38px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+/* NOMBRE PRINCIPAL */
+
+.nombre {
+    font-size: 35px;
+    font-weight: 800;
+    color: #202a27;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+/* SUBTÍTULO */
+
+.subtitulo {
+    color: #249b75;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+/* ===== SECCIONES ===== */
+
+.seccion {
+    margin-bottom: 28px;
+}
+
+.seccion h2 {
+    color: #249b75;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 4px solid #36c99a;
+}
+
+.seccion p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #505b56;
+    margin-bottom: 5px;
+}
+
+/* ===== HABILIDADES ===== */
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidades span {
+    background-color: #e1f5ed;
+    color: #207b5d;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #bce8d6;
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .cv {
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+    }
+
+    .derecha {
+        padding: 30px 22px;
+    }
+
+    .nombre {
+        font-size: 27px;
+    }
+}
